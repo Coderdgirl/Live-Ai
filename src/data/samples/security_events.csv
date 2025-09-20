@@ -1,0 +1,11 @@
+event_id,timestamp,event_type,user_id,source_ip,resource_id,severity,status,is_flagged,anomaly_indicator
+SEC001,2023-06-15T08:23:45Z,login,user123,192.168.1.105,auth-server-01,high,failed,true,multiple_failed_attempts
+SEC002,2023-06-15T08:25:12Z,login,user123,192.168.1.105,auth-server-01,high,success,true,success_after_failures
+SEC003,2023-06-15T09:12:33Z,file_access,user456,192.168.1.110,file-server-02,medium,success,false,
+SEC004,2023-06-15T10:05:21Z,privilege_escalation,admin001,192.168.1.120,admin-server-01,high,success,true,unusual_privilege_change
+SEC005,2023-06-15T11:30:45Z,data_export,user789,192.168.1.115,data-server-03,high,success,true,large_data_transfer
+SEC006,2023-06-15T12:15:22Z,login,user234,203.0.113.25,auth-server-01,medium,failed,false,
+SEC007,2023-06-15T13:42:18Z,configuration_change,admin002,192.168.1.125,config-server-01,medium,success,true,unusual_config_change
+SEC008,2023-06-15T14:20:33Z,api_access,service001,192.168.1.130,api-gateway-01,low,success,false,
+SEC009,2023-06-15T15:05:12Z,logout,user123,192.168.1.105,auth-server-01,low,success,false,
+SEC010,2023-06-15T16:30:45Z,login,user567,198.51.100.75,auth-server-02,high,failed,true,geo_location_mismatch
